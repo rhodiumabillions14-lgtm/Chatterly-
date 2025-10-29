@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatterly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen active">
+      <h2>Welcome to Chatterly</h2>
+      <input type="text" placeholder="Phone number or Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p><a href="#">Forgot Password?</a></p>
+      <p><a href="#">Don't have an account? Register</a></p>
+    </div>
+
+    <!-- Main App Screens -->
+    <div id="main-screen" class="screen">
+      <div id="content">
+        <!-- Dynamic content goes here -->
+      </div>
+      <nav>
+        <button onclick="showScreen('chat')">Chat</button>
+        <button onclick="showScreen('calls')">Calls</button>
+        <button onclick="showScreen('ai')">AI</button>
+        <button onclick="showScreen('frastion')">Frastion</button>
+        <button onclick="showScreen('profile')">Profile</button>
+      </nav>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
